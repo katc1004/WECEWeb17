@@ -1,4 +1,4 @@
-/* this is the css for about page */
+/* this is the css for contact us page */
 
 * {
     color: #757575;
@@ -29,7 +29,8 @@
     margin: 0;
     padding: 100px 50px 100px 50px;
     text-shadow: 0px 0px 7px #ffffff;
-    background-image: url('images/aboutheader.png');
+    background-image: url('images/contactheader.png');
+    /* image credits to http://www.clientcenteredsalestraining.com/img/contact.jpg */
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
@@ -49,49 +50,18 @@
 
 /* SUBSECTIONS */
 
-.subsection {
-    margin: 0;
-    padding: 100px 50px 100px 50px;
-    transition: background-color 2s ease;
-}
-
-.subsection:hover {
-    background-color: #f9f9f9;
-}
-
-.subsection h1 {
-    color: #63a28d;
-    font-size: 160%;
-    font-family: 'Comfortaa', "Times New Roman", serif;
-    text-transform: uppercase;
-}
-
-.subsection h2 {
-    color: #145252;
-    font-size: 120%;
-}
-
-.subsection a,
-.subsection a:visited {
-    color: #66cc99;
-    letter-spacing: 5px;
-}
-
-.subsection a:hover {
-    color: #757575;
-    letter-spacing: 5px;
-}
-
 .subsectionlink {
     margin: 0;
     padding: 100px 50px 100px 50px;
     transition: background-color 1s ease;
+    text-transform: none;
 }
 
 .subsectionlink h1 {
     color: #66cc99;
     text-shadow: 2px 2px 1px #f9f9f9;
     transition: color 1s ease, text-shadow 1s ease;
+    text-transform: uppercase;
 }
 
 .subsectionlink:hover {
@@ -118,18 +88,11 @@
     }
 }
 
+
 /* webpage heading */
 
 @media screen and (max-width: 300px) {
     #mainsubsection span {
         font-size: 200%;
-    }
-}
-
-/* the logo */
-
-@media screen and (max-width: 500px) {
-    .subsection img {
-        width: 50vw;
     }
 }
