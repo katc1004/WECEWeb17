@@ -41,6 +41,7 @@
     z-index: 2;
 }
 
+
 /* SUBSECTIONS */
 
 .subsection {
@@ -183,11 +184,14 @@
     width: 100px;
 }
 
+
 /* ----------------------------------------
 --- FOR DIFFERENT SCREEN RESOLUTIONS ---
 ---------------------------------------- */
 
+
 /* biggest header */
+
 @media screen and (max-width: 480px) {
     .subsection h1 b {
         font-size: 160%;

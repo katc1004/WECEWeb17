@@ -1,0 +1,128 @@
+/* this is the css for about page */
+
+* {
+    color: #757575;
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+* a,
+* a:visited,
+* a:hover {
+    font-family: 'Rajdhani', Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* BODY INCLUDES MAINSUBSECTION AND ALL SUBSECTIONS */
+
+.body {
+    margin: 0;
+    text-align: center;
+    z-index: -1;
+}
+
+
+/* MAINSUBSECTION */
+
+#mainsubsection {
+    margin: 0;
+    padding: 100px 50px 100px 50px;
+    text-shadow: 0px 0px 7px #ffffff;
+    background-image: url('images/aboutheader.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#mainsubsection span {
+    color: #145252;
+    font-size: 300%;
+    font-weight: 100;
+    font-family: 'Rajdhani', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+
+/* SUBSECTIONS */
+
+.subsection {
+    margin: 0;
+    padding: 100px 50px 100px 50px;
+    transition: background-color 2s ease;
+}
+
+.subsection:hover {
+    background-color: #f9f9f9;
+}
+
+.subsection h1 {
+    color: #63a28d;
+    font-size: 160%;
+    font-family: 'Comfortaa', "Times New Roman", serif;
+    text-transform: uppercase;
+}
+
+.subsection h2 {
+    color: #145252;
+    font-size: 120%;
+}
+
+.subsection a,
+.subsection a:visited {
+    color: #66cc99;
+    letter-spacing: 5px;
+}
+
+.subsection a:hover {
+    color: #757575;
+    letter-spacing: 5px;
+}
+
+.subsectionlink {
+    margin: 0;
+    padding: 100px 50px 100px 50px;
+    transition: background-color 1s ease;
+}
+
+.subsectionlink h1 {
+    color: #66cc99;
+    text-shadow: 2px 2px 1px #f9f9f9;
+    transition: color 1s ease, text-shadow 1s ease;
+}
+
+.subsectionlink:hover {
+    background-color: #66cc99;
+}
+
+.subsectionlink:hover h1 {
+    color: white;
+    text-shadow: 2px 2px 1px #63a28d;
+}
+
+
+/* ----------------------------------------
+--- FOR DIFFERENT SCREEN RESOLUTIONS ---
+---------------------------------------- */
+
+
+/* headers */
+
+@media screen and (max-width: 250px) {
+    .subsection h1,
+    .subsectionlink h1 {
+        font-size: 100%;
+    }
+}
+
+
+/* the logo */
+
+@media screen and (max-width: 500px) {
+    .subsection img {
+        width: 50vw;
+    }
+}

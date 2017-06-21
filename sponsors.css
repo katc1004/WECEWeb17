@@ -1,0 +1,115 @@
+/* this is the css for sponsors page */
+
+* {
+    color: #757575;
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+* a,
+* a:visited,
+* a:hover {
+    font-family: 'Rajdhani', Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* BODY INCLUDES MAINSUBSECTION AND ALL SUBSECTIONS */
+
+.body {
+    margin: 0;
+    text-align: center;
+    z-index: -1;
+}
+
+
+/* MAINSUBSECTION */
+
+#mainsubsection {
+    margin: 0;
+    padding: 100px 50px 100px 50px;
+    text-shadow: 0px 0px 7px #ffffff;
+    background-image: url('images/sponsorsheader.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#mainsubsection span {
+    color: #145252;
+    font-size: 300%;
+    font-weight: 100;
+    font-family: 'Rajdhani', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+
+/* SUBSECTIONS */
+
+.subsection {
+    margin: 0;
+    padding: 100px 50px 100px 50px;
+    transition: background-color 2s ease;
+}
+
+.subsection:hover {
+    background-color: #f9f9f9;
+}
+
+.subsection h1 {
+    color: #63a28d;
+    font-size: 160%;
+    font-family: 'Comfortaa', "Times New Roman", serif;
+    text-transform: uppercase;
+}
+
+.subsection h2 {
+    color: #145252;
+    font-size: 120%;
+}
+
+.subsection a,
+.subsection a:visited {
+    color: #66cc99;
+    letter-spacing: 5px;
+}
+
+.subsection a:hover {
+    color: #757575;
+    letter-spacing: 5px;
+}
+
+#corporatepic {
+    width: 100px;
+}
+
+.subsection li {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+
+/* ----------------------------------------
+--- FOR DIFFERENT SCREEN RESOLUTIONS ---
+---------------------------------------- */
+
+
+/* headers */
+
+@media screen and (max-width: 250px) {
+    .subsection h1 {
+        font-size: 100%;
+    }
+}
+
+
+/* webpage heading */
+
+@media screen and (max-width: 300px) {
+    #mainsubsection span {
+        font-size: 200%;
+    }
+}
