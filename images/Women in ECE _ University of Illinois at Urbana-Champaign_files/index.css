@@ -1,0 +1,201 @@
+/* this is the css for index page */
+
+* {
+    color: #757575;
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+* a,
+* a:visited,
+* a:hover {
+    font-family: 'Rajdhani', Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* BODY INCLUDES MAINSUBSECTION AND ALL SUBSECTIONS */
+
+.body {
+    position: relative;
+    margin: 0;
+    text-align: center;
+    z-index: -1;
+    background-color: transparent;
+}
+
+
+/* MAINSUBSECTION */
+
+#mainsubsection {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 100px;
+    background-image: url('images/weceboard.jpg');
+    /*starting pic, rest is controlled by mainslideshow.js*/
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 2;
+}
+
+#mainback {
+    margin: -10px 0px 0px 0px;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('images/WECE1.jpg');
+    /*starting pic, rest is controlled by mainslideshow.js*/
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 5;
+}
+
+/* SUBSECTIONS */
+
+.subsection {
+    margin: 0;
+    padding: 100px 50px 100px 50px;
+    transition: background-color 2s ease;
+}
+
+.subsection:hover {
+    background-color: #f9f9f9;
+}
+
+.subsection h1 {
+    color: #63a28d;
+    font-size: 160%;
+    font-family: 'Comfortaa', "Times New Roman", serif;
+    text-transform: uppercase;
+}
+
+.subsection h1 b {
+    color: #145252;
+    font-size: 200%;
+    font-family: 'Rajdhani', Arial, sans-serif;
+    letter-spacing: 1px
+}
+
+.subsection h2 {
+    color: #145252;
+}
+
+.subsection a,
+.subsection a:visited {
+    color: #66cc99;
+    letter-spacing: 5px;
+}
+
+.subsection a:hover {
+    color: #757575;
+    letter-spacing: 5px;
+}
+
+
+/*slideshow CSS code taken from https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+
+/* Slideshow container */
+
+.slideshow {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.slideshow a,
+.slideshow a:visited {
+    color: #757575;
+}
+
+.Slides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    padding: 16px;
+    color: #757575;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+/* Position the "next button" to the right */
+
+.prev {
+    float: left;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    float: right;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot1,
+.dot2,
+.dot3 {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #c4c4c4;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot1:hover,
+.dot2:hover,
+.dot3:hover {
+    background-color: #444444;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+#corporatepic {
+    width: 100px;
+}
