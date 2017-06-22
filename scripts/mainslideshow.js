@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // define an array of images
-    var images = ['images/weceboard.jpg', 'images/WECE1.jpg'];
+    var images = ['images/indexheader/weceboard.jpg', 'images/indexheader/WECE1.jpg'];
 
     // start at 1, because 0 is already accounted for in css
     var index = 1;

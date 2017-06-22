@@ -1,0 +1,151 @@
+/* this is the css for exec page */
+
+* {
+    color: #757575;
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+* a,
+* a:visited,
+* a:hover {
+    font-family: 'Rajdhani', Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/* BODY INCLUDES MAINSUBSECTION AND ALL SUBSECTIONS */
+
+.body {
+    margin: 0;
+    text-align: center;
+    z-index: -1;
+}
+/* MAINSUBSECTION */
+
+#mainsubsection {
+    margin: 0;
+    padding: 100px 50px 100px 50px;
+    text-shadow: 0px 0px 7px #ffffff;
+    background-image: url('images/execheader.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#mainsubsection span {
+    color: #145252;
+    font-size: 300%;
+    font-weight: 100;
+    font-family: 'Rajdhani', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+/* SUBSECTIONS */
+
+.subsection {
+    margin: 0;
+    padding: 100px 250px 100px 250px;
+    transition: background-color 2s ease;
+}
+
+.subsection:hover {
+    background-color: #f9f9f9;
+}
+
+.subsection span {
+    color: #145252;
+    font-size: 130%;
+}
+
+.subsection a,
+.subsection a:visited {
+    color: #66cc99;
+    letter-spacing: 5px;
+}
+
+.subsection a:hover {
+    color: #757575;
+    letter-spacing: 5px;
+}
+
+.subsection table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.subsection td {
+    width: 50%;
+    text-align: center;
+    padding: 50px 10px 50px 10px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.cellright {
+    text-align: left;
+}
+
+.cellleft {
+    text-align: right;
+}
+
+#propic {
+    width: 300px;
+    height: 300px;
+}
+/* ----------------------------------------
+--- FOR DIFFERENT SCREEN RESOLUTIONS ---
+---------------------------------------- */
+/* webpage heading */
+
+@media screen and (max-width: 300px) {
+    #mainsubsection span {
+        font-size: 200%;
+    }
+}
+/* width of text */
+
+@media screen and (max-width: 1100px) {
+    .subsection {
+        padding: 100px 50px 100px 50px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .subsection {
+        padding: 100px 500px 100px 500px;
+    }
+}
+/* cell adjustments */
+
+@media screen and (max-width: 1000px) {
+    #propic {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #propic {
+        width: 150px;
+        height: 150px;
+    }
+    .subsection table {
+        border-spacing: 50px;
+    }
+    .subsection td {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 0;
+        border-bottom: 0px;
+        margin: 30px 0px 30px 0px;
+    }
+    .subsection tr {
+        border-bottom: 1px solid #c4c4c4;
+    }
+    .cellleft,
+    .cellright {
+        text-align: center;
+    }
+}

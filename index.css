@@ -30,7 +30,7 @@
     height: 100vh;
     width: 100%;
     padding-top: 100px;
-    background-image: url('images/weceboard.jpg');
+    background-image: url('images/indexheader/weceboard.jpg');
     /*starting pic, rest is controlled by mainslideshow.js*/
     background-repeat: no-repeat;
     background-position: center;
