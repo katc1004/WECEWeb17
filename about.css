@@ -51,7 +51,7 @@
 
 .subsection {
     margin: 0;
-    padding: 100px 50px 100px 50px;
+    padding: 100px 250px 100px 250px;
     transition: background-color 2s ease;
 }
 
@@ -133,3 +133,18 @@
         width: 50vw;
     }
 }
+
+/* width of text */
+
+@media screen and (max-width: 1100px) {
+    .subsection {
+        padding: 100px 50px 100px 50px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .subsection {
+        padding: 100px 500px 100px 500px;
+    }
+}
+

@@ -44,6 +44,14 @@ body {
     text-align: right;
 }
 
+#nodropdown {
+    padding: 0px 25px 0px 25px;
+}
+
+#nodropdown:hover {
+    color: #66cc99;
+}
+
 .headleft img,
 .headright img {
     vertical-align: middle;
@@ -76,7 +84,7 @@ body {
 #sidebar ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 5px 0px 5px 0px;
     font-size: 110%;
 }
 
@@ -161,3 +169,15 @@ input::placeholder {
     }
 }
 
+/* menu links */
+@media screen and (min-width: 1000px) {
+    #menutext, #menubutton {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #nodropdown {
+        display: none;
+    }
+}
