@@ -13,7 +13,7 @@ $(document).ready(function () {
         showSlides(slideIndex += 1);
     });
 
-    //dots
+    //dots, EDIT IF NUMBER OF SLIDES CHANGE
     $('span.dot1').click(function () {
         currentSlide(1);
     });

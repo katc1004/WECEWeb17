@@ -89,6 +89,8 @@
 .subsection li {
     list-style-type: circle;
     list-style-position: inside;
+    text-align: left;
+    text-indent: -2em;
 }
 
 

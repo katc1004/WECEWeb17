@@ -49,17 +49,20 @@
 
 /* SUBSECTIONS */
 
-.subsection {
+.subsection,
+.calendar {
     margin: 0;
     padding: 100px 250px 100px 250px;
     transition: background-color 2s ease;
 }
 
-.subsection:hover {
+.subsection:hover,
+.calendar:hover {
     background-color: #f9f9f9;
 }
 
-.subsection h1 {
+.subsection h1,
+.calendar h1 {
     color: #63a28d;
     font-size: 160%;
     font-family: 'Comfortaa', "Times New Roman", serif;
@@ -179,13 +182,16 @@
 --- FOR DIFFERENT SCREEN RESOLUTIONS ---
 ---------------------------------------- */
 
+
 /* headers */
 
 @media screen and (max-width: 250px) {
-    .subsection h1 {
+    .subsection h1,
+    .calendar h1 {
         font-size: 100%;
     }
 }
+
 
 /* webpage heading */
 
@@ -199,13 +205,21 @@
 /* width of text */
 
 @media screen and (max-width: 1100px) {
-    .subsection {
+    .subsection,
+    .calendar {
         padding: 100px 50px 100px 50px;
     }
 }
 
 @media screen and (min-width: 2000px) {
-    .subsection {
+    .subsection,
+    .calendar {
         padding: 100px 500px 100px 500px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .calendar {
+        padding: 100px 10px 100px 10px;
     }
 }
