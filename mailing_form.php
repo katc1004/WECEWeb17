@@ -12,7 +12,7 @@
         fwrite($file,"\n");
         fclose($file);
         $message = $_POST["fullname"] . " " . $_POST["netid"];
-        mail('chern3@illinois.edu', 'New Mailing List Entry', $message);
+        mail('EMAIL', 'New Mailing List Entry', $message);
 	
     ?>
 </body>

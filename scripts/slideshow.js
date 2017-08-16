@@ -22,10 +22,6 @@ $(document).ready(function () {
         currentSlide(2);
     });
 
-    $('span.dot3').click(function () {
-        currentSlide(3);
-    });
-
     function currentSlide(n) {
         showSlides(slideIndex = n);
     }
